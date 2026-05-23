@@ -1,11 +1,11 @@
 :root {
     --primary-color: #055a05;
     /* forest green */
-    --secondary-color: #f4a261;
+    --secondary-color: rgba(255, 255, 255, 0.75);
     /* warm sand */
     --accent1-color: #264653;
     /* dark slate blue */
-    --accent2-color: #e9c46a;
+    --accent2-color: rgb(229, 252, 240);
     /* light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -76,7 +76,7 @@ h1 {
 
 h2 {
     text-align: center;
-    background-color: rgb(229, 252, 240);
+    background-color: var(--accent2-color);
     border-radius: 10px;
     padding: 10px;
 }
@@ -86,7 +86,7 @@ h2 {
     bottom: 0;
     right: 20px;
     width: auto;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: var(--secondary-color);
     padding: 12px;
     border-radius: 10px;
 }
