@@ -287,3 +287,375 @@ footer p {
     margin-top: 0.4rem;
     font-size: 0.85rem;
 }
+
+/* === Home: Newsletter === */
+.newsletter {
+    background-color: var(--accent2-color);
+    border-radius: 10px;
+    margin: 2rem 0;
+    padding: 2rem;
+}
+
+.newsletter-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.newsletter-text h2 {
+    text-align: left;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 0.5rem;
+}
+
+.newsletter-text p {
+    margin: 0;
+    padding: 0;
+    color: var(--accent1-color);
+    font-size: 0.95rem;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.newsletter-form label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--accent1-color);
+}
+
+.newsletter-form input {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+}
+
+.newsletter-form button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    font-family: var(--body-font);
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.newsletter-form button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* === Shared: Call-to-Action Banner === */
+.cta-banner {
+    background-color: var(--accent1-color);
+    border-radius: 10px;
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+}
+
+.cta-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cta-inner p {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #fff;
+    color: var(--accent1-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+}
+
+.cta-btn:hover {
+    background-color: var(--accent2-color);
+}
+
+/* === Home: Offerings Grid === */
+.offerings {
+    margin: 2rem 0;
+}
+
+.offerings h2 {
+    margin-bottom: 1.5rem;
+}
+
+.offerings-grid {
+    display: grid;
+    /* Single column of cards — layout variation comes from alternating card direction */
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.offering-card {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    background-color: var(--accent2-color);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+}
+
+/* Reverse layout for alternating cards */
+.offering-card--reverse {
+    grid-template-columns: 1fr 260px;
+}
+
+.offering-card--reverse img {
+    order: 2;
+}
+
+.offering-card--reverse .offering-text {
+    order: 1;
+}
+
+.offering-card img {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.offering-text {
+    padding: 1.25rem 1.25rem 1.25rem 0;
+}
+
+/* When card is reversed, padding flips */
+.offering-card--reverse .offering-text {
+    padding: 1.25rem 0 1.25rem 1.25rem;
+}
+
+.offering-text h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.offering-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--accent1-color);
+}
+
+/* === Trips: Page Intro === */
+.trips-intro {
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+}
+
+.trips-intro h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.trips-intro p {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 0;
+    color: var(--accent1-color);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* === Trips: Trip Cards === */
+.trips-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.trip-card {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 1.5rem;
+    align-items: start;
+    background-color: var(--accent2-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.trip-card--reverse {
+    grid-template-columns: 1fr 280px;
+}
+
+.trip-card--reverse img {
+    order: 2;
+}
+
+.trip-card--reverse .trip-details {
+    order: 1;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.trip-details {
+    padding: 1.25rem 1.25rem 1.25rem 0;
+}
+
+.trip-card--reverse .trip-details {
+    padding: 1.25rem 0 1.25rem 1.25rem;
+}
+
+.trip-badge {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.trip-badge--mid {
+    background-color: #b45309;
+    /* amber-700 — readable on light bg */
+}
+
+.trip-badge--expert {
+    background-color: #991b1b;
+    /* red-800 */
+}
+
+.trip-details h2 {
+    text-align: left;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.trip-details p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--accent1-color);
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+.trip-meta {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3rem 1rem;
+    font-size: 0.88rem;
+    color: var(--accent1-color);
+}
+
+/* === Trips: Summary Table === */
+.trips-table-section {
+    margin: 2rem 0;
+}
+
+.trips-table-section h2 {
+    margin-bottom: 1rem;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    /* safe fallback for narrow viewports */
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    font-family: var(--body-font);
+}
+
+.trips-table thead {
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.trips-table th {
+    padding: 0.7rem 1rem;
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+}
+
+.trips-table td {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid #dde;
+    color: var(--accent1-color);
+}
+
+.trips-table tbody tr:nth-child(even) {
+    background-color: var(--accent2-color);
+}
+
+.trips-table tbody tr:hover {
+    background-color: #d1f5e0;
+}
+
+/* Inline difficulty badges inside the table */
+.badge-cell {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: bold;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.badge-beg {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.badge-mid {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.badge-exp {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
