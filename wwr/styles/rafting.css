@@ -406,7 +406,6 @@ footer p {
 
 .offerings-grid {
     display: grid;
-    /* Single column of cards — layout variation comes from alternating card direction */
     grid-template-columns: 1fr;
     gap: 1.5rem;
 }
@@ -550,12 +549,10 @@ footer p {
 
 .trip-badge--mid {
     background-color: #b45309;
-    /* amber-700 — readable on light bg */
 }
 
 .trip-badge--expert {
     background-color: #991b1b;
-    /* red-800 */
 }
 
 .trip-details h2 {
@@ -634,7 +631,6 @@ footer p {
     background-color: #d1f5e0;
 }
 
-/* Inline difficulty badges inside the table */
 .badge-cell {
     display: inline-block;
     font-size: 0.78rem;
